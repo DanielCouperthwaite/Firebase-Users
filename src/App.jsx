@@ -27,8 +27,6 @@ function App() {
     await addDoc(collectionRef, payload);
   }
 
-  console.log(users)
-
   const options = [
     {value: true, label: 'true'},
     {value: false, label: 'false'}
