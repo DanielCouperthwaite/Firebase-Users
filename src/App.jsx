@@ -46,7 +46,7 @@ function App() {
           <input type='number' id="age" onChange={e => setAge(e.target.value)}></input>
         </div>
         <div>
-          <label for='isDev'></label>
+          <label for='isDev'>Are they a developer?</label>
           <Select id="isDev" options={options} onChange={e => setIsDev(e.target.value)}/>
         </div>
         
