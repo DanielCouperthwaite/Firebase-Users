@@ -20,7 +20,12 @@ function App() {
     })
   })
 
-  
+  const handleNew = async (e) => {
+    e.preventDefault()
+    const collectionRef = collection(db, 'users');
+    const payload = {Name: name, Age: age, Developer: isDev}
+    await addDoc(collectionRef, payload);
+  }
 
   console.log(users)
 
