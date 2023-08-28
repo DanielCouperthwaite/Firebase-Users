@@ -13,7 +13,6 @@ function App() {
   const [age, setAge] = useState([])
   const [isDev, setIsDev] = useState([])
 
-  console.log(name)
 
   useEffect(() => {
     onSnapshot(collection(db, 'users'), (snapshot) => {
